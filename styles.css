@@ -1,0 +1,29 @@
+main{
+    height:100vh; 
+    background-image: url('IMG/day\ plan\ 2.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main::before{
+    content: "";
+    width: 100%;
+    height:100vh; 
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    transition: background-color 2s ease;
+    z-index: 1;
+}
+
+.body{
+    z-index: 2;
+    position: relative;
+}
+
+.image{
+    height: 400px;
+    width: 400px;
+}
+

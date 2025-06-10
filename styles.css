@@ -31,6 +31,9 @@ main::before{
     header h1{
         font-size: var(--text-xl);
     }
+    section{
+        margin-bottom: 40px;
+    }
     section .plan h1{
         font-size: var(--text-2xl);
         margin-top: -70px;
@@ -43,12 +46,13 @@ main::before{
     .image img{
         position: absolute;
         top: 0;
-        left: 50%;
+        padding: 0 40px;
+        height: 160px;
         transform: translate(-50% -50%);
     }
     .image{
         height: 200px;
-        width: 230px;
+        width: 100%;
         position: relative;
         top: 40px;
     }
@@ -66,14 +70,15 @@ main::before{
     section .plan h3{
         font-size: var(--text-medium);
     }
-
+    .image img{
+        height: 170px;
+    }
     .image{
         height: 240px;
         width: 230px;
         position: relative;
-        position: absolute;
-        bottom: -180px;
-        right: 30%;
+        width: 100%;
+        padding: 20px 100px 0 100px;
         transform: translate(-50% -50%);
     }
 }
@@ -84,5 +89,22 @@ main::before{
     }
     section .plan h3{
         text-align: left;
+    }
+}
+
+@media screen  and (min-width : 867px) and (max-width : 905px){
+    section .plan h3{
+        text-align: left;
+    }
+    section{
+        padding: 0 30px;
+    }
+}
+@media screen  and (min-width : 915px) and (max-width : 1016px){
+    section .plan h3{
+        text-align: left;
+    }
+    section{
+        padding: 0 30px;
     }
 }

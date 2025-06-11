@@ -20,6 +20,7 @@ main::before{
 .body{
     z-index: 2;
     position: relative;
+    height:100vh; 
 }
 
 .image{
@@ -41,6 +42,7 @@ main::before{
     }
     section .plan h3{
         font-size: var(--text-xl);
+        padding: 0 20px;
     }
 
     .image img{
